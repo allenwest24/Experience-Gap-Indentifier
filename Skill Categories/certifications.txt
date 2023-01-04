@@ -1,0 +1,469 @@
+A+
+CCNA
+CCNP
+CCIE
+CISSP
+CISM
+CISA
+CASP
+CSCS
+CCE
+CEH
+CHFI
+CHST
+CIW
+Cloud+
+CompTIA Linux+
+CompTIA Network+
+CompTIA Security+
+CompTIA Cloud Essentials
+CompTIA Cloud+
+CompTIA Healthcare IT Technician
+CompTIA Mobile App Security+
+CompTIA PenTest+
+CompTIA Security Analyst+
+CompTIA Server+
+CompTIA Storage+
+CompTIA Cybersecurity Analyst
+CompTIA Network Security+
+CompTIA CySA+
+CompTIA Advanced Security Practitioner
+CompTIA Cybersecurity Expert
+CompTIA Cloud Security+
+CompTIA Cybersecurity Analyst+
+CompTIA Cybersecurity Foundations
+CompTIA Cybersecurity Professional
+CompTIA Cybersecurity Technician
+CompTIA Cloud+ Powered by AWS
+CompTIA Cloud+ Powered by Azure
+CompTIA Cloud+ Powered by Google Cloud
+CompTIA Cloud+ Powered by Rackspace
+CompTIA Cloud+ Powered by Salesforce
+CompTIA Cloud+ Powered by VMware
+CompTIA Cloud+ Powered by Wipro
+CompTIA Cloud+ Powered by Xtravirt
+CompTIA IoT Security+
+CompTIA Mobile App Security+
+CompTIA Mobile+
+CompTIA Mobility+
+CompTIA PenTest+
+CompTIA Server+
+CompTIA Server+ Powered by VMWare
+CompTIA Storage+
+CompTIA Storage+ Powered by VMWare
+CompTIA TK0-001
+CompTIA TK0-202
+CompTIA TK0-203
+CompTIA TK0-201
+CompTIA TK0-202
+CompTIA TK0-203
+CompTIA TK0-207
+CompTIA TK0-250
+CompTIA TK0-251
+CompTIA TK0-253
+CompTIA TK0-255
+CompTIA TK0-260
+CompTIA TK0-401
+CompTIA TK0-601
+CompTIA TK0-602
+CompTIA TK0-603
+CompTIA TK0-604
+CompTIA TK0-701
+CompTIA TK0-702
+CompTIA TK0-703
+Agile
+AWS Certified Solutions Architect
+AWS Certified Developer
+AWS Certified SysOps Administrator
+AWS Certified DevOps Engineer
+AWS Certified Solutions Architect Professional
+AWS Certified Cloud Practitioner
+AWS Certified Advanced Networking Specialty
+AWS Certified Machine Learning Specialty
+AWS Certified Alexa Skill Builder
+AWS Certified Data Analytics Specialty
+AWS Certified Robotics Specialty
+AWS Certified Security Specialty
+Azure Administrator
+Azure Developer
+Azure Solutions Architect Expert
+Azure DevOps Engineer Expert
+Azure Security Engineer
+Azure AI Engineer
+Azure Data Scientist
+Azure Database Administrator
+Azure Data Engineer
+Azure Data Fundamentals
+Azure IoT Developer
+Azure IoT Fundamentals
+Certified ScrumMaster
+Certified Scrum Product Owner
+Certified Agile Leadership
+Certified Agile Process Owner
+Certified Agile Project Manager
+Certified Cloud Security Professional
+Certified Ethical Hacker
+Certified Information Systems Security Professional
+Certified Information Security Manager
+Certified Information Systems Auditor
+Certified in Risk and Information Systems Control
+Certified Secure Software Lifecycle Professional
+Certified Wireless Network Administrator
+Cisco Certified Network Associate
+Cisco Certified Network Professional
+Cisco Certified Internetwork Expert
+Cisco Certified Design Associate
+Cisco Certified Design Professional
+Cisco Certified DevNet Associate
+Cisco Certified DevNet Professional
+Cisco Certified DevNet Specialist
+Cisco Certified DevNet Expert
+Cisco Certified CyberOps Associate
+Cisco Certified CyberOps Professional
+Cisco Certified Collaboration Associate
+Cisco Certified Collaboration Professional
+Cisco Certified Collaboration DevNet Specialist
+Cisco Certified Collaboration DevNet Expert
+Cisco Certified Security Analyst
+Cisco Certified Security Professional
+Cisco Certified Security Expert
+Cisco Certified Internet of Things Specialist
+Cisco Certified Internet of Things Expert
+Cisco Certified Internet of Things Professional
+Cisco Certified Internet of Things Operations Specialist
+Cisco Certified Internet of Things Operations Expert
+Cisco Certified Internet of Things Operations Professional
+Cisco Certified Internet of Things Designer
+Cisco Certified Internet of Things Developer
+Cisco Certified Internet of Things Systems Engineer
+Cisco Certified Internet of Things Sales Engineer
+Cisco Certified Internet of Things Support Engineer
+Cisco Certified Internet of Things Field Engineer
+Cisco Certified Internet of Things Consultant
+Cisco Certified Internet of Things Architect
+Cisco Certified Internet of Things Service Provider Operations
+Cisco Certified Internet of Things Service Provider Design
+Cisco Certified Internet of Things Service Provider Implementation
+Cisco Certified Internet of Things Service Provider Operations Support
+Certified Cloud Architect
+Certified Cloud Security Professional
+Certified Cloud Developer
+Certified Cloud Security Engineer
+Certified Cloud Security Administrator
+Certified Cloud Management Specialist
+Certified Cloud Services Expert
+Certified Cloud Services Professional
+Certified Cloud Services Specialist
+Certified Cloud Services Engineer
+Certified Cloud Services Administrator
+Certified Cloud Governance Specialist
+Certified Cloud Governance Professional
+Certified Cloud Governance Engineer
+Certified Cloud Governance Administrator
+Certified Cloud Data Scientist
+Certified Cloud Data Engineer
+Certified Cloud Data Professional
+Certified Cloud Data Specialist
+Certified Cloud Data Engineer
+Certified Cloud Data Administrator
+Certified Cloud Data Governance Professional
+Certified Cloud Data Governance Engineer
+Certified Cloud Data Governance Administrator
+Certified Cloud Data Management Professional
+Certified Cloud Data Management Engineer
+Certified Cloud Data Management Administrator
+Certified Cloud Data Security Professional
+Certified Cloud Data Security Engineer
+Certified Cloud Data Security Administrator
+Certified Cloud Data Storage Professional
+Certified Cloud Data Storage Engineer
+Certified Cloud Data Storage Administrator
+Certified Cloud Infrastructure Professional
+Certified Cloud Infrastructure Engineer
+Certified Cloud Infrastructure Administrator
+Certified Cloud Infrastructure Security Professional
+Certified Cloud Infrastructure Security Engineer
+Certified Cloud Infrastructure Security Administrator
+Certified Cloud Networking Professional
+Certified Cloud Networking Engineer
+Certified Cloud Networking Administrator
+Certified Cloud Platform Professional
+Certified Cloud Platform Engineer
+Certified Cloud Platform Administrator
+Certified Cloud Platform Security Professional
+Certified Cloud Platform Security Engineer
+Certified Cloud Platform Security Administrator
+Certified Cloud Security Professional
+Certified Cloud Security Engineer
+Certified Cloud Security Administrator
+Certified Cloud Storage Professional
+Certified Cloud Storage Engineer
+Certified Cloud Storage Administrator
+Certified Cloud Systems Engineer
+Certified Cloud Systems Administrator
+Certified Cloud Technology Professional
+Certified Cloud Technology Engineer
+Certified Cloud Technology Administrator
+Certified Cloud Technology Security Professional
+Certified Cloud Technology Security Engineer
+Certified Cloud Technology Security Administrator
+Certified Cloud Network Infrastructure Professional
+Certified Cloud Network Infrastructure Engineer
+Certified Cloud Network Infrastructure Administrator
+Certified Cloud Network Infrastructure Security Professional
+Certified Cloud Network Infrastructure Security Engineer
+Certified Cloud Network Infrastructure Security Administrator
+GIAC Certified Incident Handler
+GIAC Certified Intrusion Analyst
+GIAC Certified Enterprise Defender
+GIAC Certified Enterprise Defender
+GIAC Certified Forensic Analyst
+GIAC Certified Forensic Examiner
+GIAC Certified Penetration Tester
+GIAC Certified Reverse Engineering Malware
+GIAC Information Security Fundamentals
+GIAC Security Leadership Certification
+GIAC Security Essentials Certification
+GIAC Systems and Network Auditor
+GIAC Information Security Professional
+JNCIA-Junos
+JNCIS-SEC
+JNCIS-ENT
+JNCIS-SP
+JNCIS-DC
+JNCIS-CLOUD
+JNCIS-DevOps
+JNCIS-CON
+JNCIS-SNA
+JNCIS-FWV
+JNCIS-M
+JNCIS-ER
+JNCIS-SECUR
+JNCIS-INTRUS
+JNCIS-EXAM
+JNCIS-IDP
+JNCIS-M/T
+JNCIS-SPVC
+JNCIS-ENTSEC
+JNCIS-CLD
+JNCIS-TRANS
+JNCIS-IDPVC
+JNCIS-ATM
+JNCIS-SGVC
+JNCIS-CORESEC
+JNCIS-AS
+JNCIS-SECUR
+JNCIS-DCVC
+JNCIS-ENTSEC
+JNCIS-FWV
+JNCIS-INTRUS
+JNCIS-M
+JNCIS-M/T
+JNCIS-SEC
+JNCIS-SP
+JNCIS-SPVC
+JNCIS-TRANS
+JNCIS-EXAM
+JNCIS-ATM
+JNCIS-SGVC
+JNCIS-CORESEC
+JNCIS-AS
+JNCIS-SECUR
+JNCIS-CLOUD
+JNCIS-ENT
+JNCIS-CLD
+JNCIS-DC
+JNCIS-DevOps
+JNCIS-IDP
+JNCIS-IDPVC
+JNCIS-CON
+JNCIS-SNA
+JNCIS-FWV
+JNCIS-ER
+JNCIS-DCVC
+JNCIS-ENTSEC
+JNCIS-CLOUD
+JNCIS-CLD
+JNCIS-DC
+JNCIS-DevOps
+JNCIS-CON
+JNCIS-SNA
+JNCIS-FWV
+JNCIS-M
+JNCIS-ER
+JNCIS-SECUR
+JNCIS-INTRUS
+JNCIS-EXAM
+JNCIS-IDP
+JNCIS-M/T
+JNCIS-SPVC
+JNCIS-ENTSEC
+JNCIS-TRANS
+JNCIS-IDPVC
+JNCIS-ATM
+JNCIS-SGVC
+JNCIS-CORESEC
+JNCIS-AS
+JNCIS-SECUR
+JNCIS-DCVC
+JNCIS-ENTSEC
+JNCIS-FWV
+JNCIS-INTRUS
+JNCIS-M
+JNCIS-M/T
+JNCIS-SEC
+JNCIS-SP
+JNCIS-SPVC
+JNCIS-TRANS
+JNCIS-EXAM
+JNCIS-ATM
+JNCIS-SGVC
+JNCIS-CORESEC
+MCSA: Cloud Platform
+MCSA: Linux on Azure
+MCSA: Windows Server 2016
+MCSA: Windows Server 2012
+MCSA: Windows Server 2008
+MCSA: Windows 10
+MCSA: Office 365
+MCSA: SQL 2016 Database Administration
+MCSA: SQL 2016 Database Development
+MCSA: SQL Server 2012/2014
+MCSA: SQL 2016 Business Intelligence Development
+MCSA: SQL 2016 Business Intelligence Development
+MCSA: Dynamics 365 for Customer Engagement Online Deployment
+MCSA: Dynamics 365 for Operations
+MCSA: Azure Developer
+MCSA: Machine Learning
+MCSA: Data Engineering with Azure
+MCSA: Web Applications
+MCSA: Universal Windows Platform
+MCSA: Azure Solutions Architect
+MCSA: Windows Server 2016
+MCSA: Windows Server 2012
+MCSA: Windows Server 2008
+MCSA: Windows 10
+MCSA: Office 365
+MCSA: SQL 2016 Database Administration
+MCSA: SQL 2016 Database Development
+MCSA: SQL Server 2012/2014
+MCSA: SQL 2016 Business Intelligence Development
+MCSA: Dynamics 365 for Customer Engagement Online Deployment
+MCSA: Dynamics 365 for Operations
+MCSA: Azure Developer
+MCSA: Machine Learning
+MCSA: Data Engineering with Azure
+MCSA: Web Applications
+MCSA: Universal Windows Platform
+MCSA: Azure Solutions Architect
+MCSA: Cloud Platform
+MCSA: Linux on Azure
+MCSA: Windows Server 2016
+MCSA: Windows Server 2012
+MCSA: Windows Server 2008
+MCSA: Windows 10
+MCSA: Office 365
+MCSA: SQL 2016 Database Administration
+MCSA: SQL 2016 Database Development
+MCSA: SQL Server 2012/2014
+MCSA: SQL 2016 Business Intelligence Development
+MCSA: Dynamics 365 for Customer Engagement Online Deployment
+MCSA: Dynamics 365 for Operations
+MCSA: Azure Developer
+MCSA: Machine Learning
+MCSA: Data Engineering with Azure
+MCSA: Web Applications
+MCSA: Universal Windows Platform
+MCSA: Azure Solutions Architect
+MCSE: Cloud Platform and Infrastructure
+MCSE: Mobility
+MCSE: Productivity
+MCP: Windows Server 2016
+MCP: Windows Server 2012
+MCP: Windows Server 2008
+MCP: Windows 10
+MCP: Office 365
+MCP: SQL 2016
+MCP: SQL Server 2012/2014
+MCP: Dynamics 365
+MCP: Azure Developer
+MCP: Machine Learning
+MCP: Data Engineering with Azure
+MCP: Web Applications
+MCP: Universal Windows Platform
+MCP: Azure Solutions Architect
+MCP: Cloud Platform
+MCP: Linux on Azure
+MCP: Windows Server 2016
+MCP: Windows Server 2012
+MCP: Windows Server 2008
+MCP: Windows 10
+MCP: Office 365
+MCP: SQL 2016
+MCP: SQL Server 2012/2014
+MCP: Dynamics 365
+MCP: Azure Developer
+MCP: Machine Learning
+MCP: Data Engineering with Azure
+MCP: Web Applications
+MCP: Universal Windows Platform
+MCP: Azure Solutions Architect
+MCP: Cloud Platform and Infrastructure
+MCP: Mobility
+MCP: Productivity
+MCP: Data Management and Analytics
+MCP: Business Applications
+MCP: Identity and Access Administrator
+MCP: Azure Administrator
+MCP: Cloud Data Scientist
+MCP: Cloud Data Engineer
+MCP: Cloud Data Professional
+MCP: Cloud Data Specialist
+MCP: Cloud Data Engineer
+MCP: Cloud Data Administrator
+MCP: Cloud Data Governance Professional
+MCP: Cloud Data Governance Engineer
+MCP: Cloud Data Governance Administrator
+MCP: Cloud Data Management Professional
+MCP: Cloud Data Management Engineer
+MCP: Cloud Data Management Administrator
+MCP: Cloud Data Security Professional
+MCP: Cloud Data Security Engineer
+MCP: Cloud Data Security Administrator
+MCP: Cloud Data Storage Professional
+MCP: Cloud Data Storage Engineer
+MCP: Cloud Data Storage Administrator
+MCP: Cloud Infrastructure Professional
+MCP: Cloud Infrastructure Engineer
+MCP: Cloud Infrastructure Administrator
+MCP: Cloud Infrastructure Security Professional
+MCP: Cloud Infrastructure Security Engineer
+MCP: Cloud Infrastructure Security Administrator
+MCP: Cloud Networking Professional
+MCP: Cloud Networking Engineer
+MCP: Cloud Networking Administrator
+MCP: Cloud Platform Professional
+MCP: Cloud Platform Engineer
+MCP: Cloud Platform Administrator
+MCP: Cloud Platform Security Professional
+MCP: Cloud Platform Security Engineer
+MCP: Cloud Platform Security Administrator
+MCP: Cloud Security Professional
+MCP: Cloud Security Engineer
+CCSP
+CCSK
+ISSAP
+ISSEP
+ISSMP
+GCIH
+GCFA
+GPEN
+GXPN
+GWAPT
+GISF
+GSEC
+GCED
+GICSP
+GMON
+GCDA
+GLEG
