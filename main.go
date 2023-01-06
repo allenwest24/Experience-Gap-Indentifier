@@ -94,6 +94,7 @@ func identifyMissingWords(resume string, jobPostings []string) map[string]int {
 		for _, word := range postingWords {
 			if !contains(resumeWords, word) {
 				missingWords[word]++
+				break
 			}
 		}
 	}
@@ -109,17 +110,96 @@ func contains(slice []string, item string) bool {
 	return false
 }
 
+func readFile(filename string) string {
+	data, err := ioutil.ReadFile(filename)
+	if err !- nil {
+		fmt.prinln(err)
+		return ""
+	}
+	return string(data)
+}
+
 func writeMissingWords(filename string, missingWords map[string]int) error {
+	knownCerts := readfile(strings.Join([]string{"Skill Categories", "certifications.txt"}, " "))
+	knownCBW := readfile(strings.Join([]string{"Skill Categories", "cyber_buzz_words.txt"}, " "))
+	knownPL := readfile(strings.Join([]string{"Skill Categories", "programming_languages.txt"}, " "))
+	knownAcronyms := readfile(strings.Join([]string{"Skill Categories", "tech_acronyms.txt"}, " "))
+
 	file, err := os.Create(filename)
 	if err != nil {
 		return err
 	}
 	defer file.Close()
 
+	var certList []string
+	var CBWList []string
+	var PLList []string
+	var acronymList []string
+	var other []string
+
 	for word, count := range missingWords {
-		if _, err := file.WriteString(fmt.Sprintf("%s (%d job postings)\n", word, count)); err != nil {
+		if strings.Contains(knownCerts, word) {
+			certList = append(certList, word)
+		} else if strings.Contains(knownCBW, word) {
+			CBWList = append(CBWList, word)
+		} else if strings.Contains(knownPL, word) {
+			PLList = append(PLList, word)
+		} else if strings.Contains(knownAcronyms, word) {
+			acronymList = append(acronymList, word)
+		} else {
+			other = append(other, word)
+		}
+	}
+
+	// Write all certifications to output.txt.
+	if _, err := file.WriteString("CERTIFICATIONS:\n"); err != nil {
+		return err
+	}
+	for _, str := range certList {
+		if _, err := file.WriteString(fmt.Sprintf("%s (%d job postings)\n", word, missingWords[word])); err != nil {
 			return err
 		}
 	}
+
+	// Write all cyber buzz words to output.txt.
+        if _, err := file.WriteString("CYBER BUZZ WORDS:\n"); err != nil {
+                return err
+        }
+        for _, str := range CBWList {
+                if _, err := file.WriteString(fmt.Sprintf("%s (%d job postings)\n", word, missingWords[word])); err != nil {
+                        return err
+                }
+        }
+
+	// Write all programming languages to output.txt.
+        if _, err := file.WriteString("PROGRAMMING LANGUAGES:\n"); err != nil {
+                return err
+        }
+        for _, str := range PLList {
+                if _, err := file.WriteString(fmt.Sprintf("%s (%d job postings)\n", word, missingWords[word])); err != nil {
+                        return err
+                }
+        }
+
+	// Write all acronyms to output.txt.
+        if _, err := file.WriteString("ACRONYMS:\n"); err != nil {
+                return err
+        }
+        for _, str := range acronymList {
+                if _, err := file.WriteString(fmt.Sprintf("%s (%d job postings)\n", word, missingWords[word])); err != nil {
+                        return err
+                }
+        }
+
+	// Write all else  to output.txt.
+        if _, err := file.WriteString("EVERYTHING ELSE:\n"); err != nil {
+                return err
+        }
+        for _, str := range other {
+                if _, err := file.WriteString(fmt.Sprintf("%s (%d job postings)\n", word, missingWords[word])); err != nil {
+                        return err
+                }
+        }
+
 	return nil
 }
