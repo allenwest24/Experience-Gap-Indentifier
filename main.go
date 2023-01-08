@@ -94,10 +94,10 @@ func identifyMissingWords(resume string, jobPostings []string) map[string]int {
 		for _, word := range postingWords {
 			if !contains(resumeWords, word) {
 				missingWords[word]++
-				break
 			}
 		}
 	}
+	fmt.Println(missingWords)
 	return missingWords
 }
 
@@ -112,18 +112,18 @@ func contains(slice []string, item string) bool {
 
 func readFile(filename string) string {
 	data, err := ioutil.ReadFile(filename)
-	if err !- nil {
-		fmt.prinln(err)
+	if err != nil {
+		fmt.Println(err)
 		return ""
 	}
 	return string(data)
 }
 
 func writeMissingWords(filename string, missingWords map[string]int) error {
-	knownCerts := readfile(strings.Join([]string{"Skill Categories", "certifications.txt"}, " "))
-	knownCBW := readfile(strings.Join([]string{"Skill Categories", "cyber_buzz_words.txt"}, " "))
-	knownPL := readfile(strings.Join([]string{"Skill Categories", "programming_languages.txt"}, " "))
-	knownAcronyms := readfile(strings.Join([]string{"Skill Categories", "tech_acronyms.txt"}, " "))
+	knownCerts := readFile(strings.Join([]string{"Skill Categories", "certifications.txt"}, "/"))
+	knownCBW := readFile(strings.Join([]string{"Skill Categories", "cyber_buzz_words.txt"}, "/"))
+	knownPL := readFile(strings.Join([]string{"Skill Categories", "programming_languages.txt"}, "/"))
+	knownAcronyms := readFile(strings.Join([]string{"Skill Categories", "tech_acronyms.txt"}, "/"))
 
 	file, err := os.Create(filename)
 	if err != nil {
@@ -137,7 +137,9 @@ func writeMissingWords(filename string, missingWords map[string]int) error {
 	var acronymList []string
 	var other []string
 
-	for word, count := range missingWords {
+	fmt.Println(missingWords)
+
+	for word := range missingWords {
 		if strings.Contains(knownCerts, word) {
 			certList = append(certList, word)
 		} else if strings.Contains(knownCBW, word) {
@@ -150,13 +152,14 @@ func writeMissingWords(filename string, missingWords map[string]int) error {
 			other = append(other, word)
 		}
 	}
+	fmt.Println(certList)
 
 	// Write all certifications to output.txt.
 	if _, err := file.WriteString("CERTIFICATIONS:\n"); err != nil {
 		return err
 	}
 	for _, str := range certList {
-		if _, err := file.WriteString(fmt.Sprintf("%s (%d job postings)\n", word, missingWords[word])); err != nil {
+		if _, err := file.WriteString(fmt.Sprintf("%s (%d mentions)\n", str, missingWords[str])); err != nil {
 			return err
 		}
 	}
@@ -166,7 +169,7 @@ func writeMissingWords(filename string, missingWords map[string]int) error {
                 return err
         }
         for _, str := range CBWList {
-                if _, err := file.WriteString(fmt.Sprintf("%s (%d job postings)\n", word, missingWords[word])); err != nil {
+                if _, err := file.WriteString(fmt.Sprintf("%s (%d mentions)\n", str, missingWords[str])); err != nil {
                         return err
                 }
         }
@@ -176,7 +179,7 @@ func writeMissingWords(filename string, missingWords map[string]int) error {
                 return err
         }
         for _, str := range PLList {
-                if _, err := file.WriteString(fmt.Sprintf("%s (%d job postings)\n", word, missingWords[word])); err != nil {
+                if _, err := file.WriteString(fmt.Sprintf("%s (%d mentions)\n", str, missingWords[str])); err != nil {
                         return err
                 }
         }
@@ -186,7 +189,7 @@ func writeMissingWords(filename string, missingWords map[string]int) error {
                 return err
         }
         for _, str := range acronymList {
-                if _, err := file.WriteString(fmt.Sprintf("%s (%d job postings)\n", word, missingWords[word])); err != nil {
+                if _, err := file.WriteString(fmt.Sprintf("%s (%d mentions)\n", str, missingWords[str])); err != nil {
                         return err
                 }
         }
@@ -196,7 +199,7 @@ func writeMissingWords(filename string, missingWords map[string]int) error {
                 return err
         }
         for _, str := range other {
-                if _, err := file.WriteString(fmt.Sprintf("%s (%d job postings)\n", word, missingWords[word])); err != nil {
+                if _, err := file.WriteString(fmt.Sprintf("%s (%d mentions)\n", str, missingWords[str])); err != nil {
                         return err
                 }
         }
