@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"os"
 	"strings"
+	"log"
 )
 
 func main() {
@@ -110,13 +111,27 @@ func contains(slice []string, item string) bool {
 	return false
 }
 
-func readFile(filename string) string {
-	data, err := ioutil.ReadFile(filename)
+func readFile(filename string) []string {
+	// Open the file using the os.Open function
+	file, err := os.Open("filename.txt")
 	if err != nil {
-		fmt.Println(err)
-		return ""
+	    log.Fatal(err)
 	}
-	return string(data)
+	defer file.Close()
+
+	// Create a new Scanner to read the file
+	scanner := bufio.NewScanner(file)
+
+	// Use the Scan function to read the file line by line
+	lines := []string{}
+	for scanner.Scan() {
+	    lines = append(lines, scanner.Text())
+	}
+	
+	if err := scanner.Err(); err != nil {
+	    log.Fatal(err)
+	}
+	return lines
 }
 
 func writeMissingWords(filename string, missingWords map[string]int) error {
@@ -137,16 +152,14 @@ func writeMissingWords(filename string, missingWords map[string]int) error {
 	var acronymList []string
 	var other []string
 
-	fmt.Println(missingWords)
-
 	for word := range missingWords {
-		if strings.Contains(knownCerts, word) {
+		if contains(knownCerts, word) {
 			certList = append(certList, word)
-		} else if strings.Contains(knownCBW, word) {
+		} else if contains(knownCBW, word) {
 			CBWList = append(CBWList, word)
-		} else if strings.Contains(knownPL, word) {
+		} else if contains(knownPL, word) {
 			PLList = append(PLList, word)
-		} else if strings.Contains(knownAcronyms, word) {
+		} else if contains(knownAcronyms, word) {
 			acronymList = append(acronymList, word)
 		} else {
 			other = append(other, word)
