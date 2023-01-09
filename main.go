@@ -29,7 +29,8 @@ func main() {
 	fmt.Println(resume)
 
 	// Read the job postings from the provided files and URLs
-	jobPostings, err := readJobPostings(os.Args[1:])
+	//jobPostings, err := readJobPostings(os.Args[1:])
+	jobPostings, err := readJobPostings(flag.Args())
 	if err != nil {
 		fmt.Println(err)
 		return
