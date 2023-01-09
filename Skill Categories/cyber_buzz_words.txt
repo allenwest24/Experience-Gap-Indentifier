@@ -1,138 +1,138 @@
-Hacking
-Malware
-Phishing
-Ransomware
-Virus
-Firewall
-Encryption
-Cryptography
-Zero-day
-Exploit
-Intrusion
-Vulnerability
-Privacy
-Identity
-Access
-Authentication
-Authorization
-Access control
-Auditing
-Compliance
-Regulation
-Governance
-Risk
-Threat
-Mitigation
-Prevention
-Detection
-Incident response
-Recovery
-Continuity
-Disaster
-Forensics
-Intelligence
-Incident
-Security operations center
-Security information and event management
-Log management
-Data loss prevention
-Endpoint security
-Mobile security
-Cloud security
-IoT security
-SCADA security
-Network security
-Application security
-Web security
-Email security
-Identity and access management
-Identity governance
-Single sign-on
-Multi-factor authentication
-Identity federation
-Identity and access provisioning
-Identity and access life cycle management
-Password management
-Security as a service
-Security as a platform
-Security as a product
-Security orchestration
-Blockchain
-Cryptocurrency
-Biometric authentication
-Cybercrime
-Cyber espionage
-Cyber warfare
-Cyber terrorism
-Cyberbullying
-DDoS
-DoS
-Botnet
-Spam
-Spyware
-Adware
-Rootkit
-Backdoor
-Trojan
-Worm
-Buffer overflow
-SQL injection
-Cross-site scripting
-Cross-site request forgery
-Man-in-the-middle
-Eavesdropping
-Sniffing
-Spoofing
-Tampering
-Physical security
-Personnel security
-Supply chain security
-Security awareness
-Awareness
-Policy
-Standard
-Procedure
-Guideline
-Baseline
-Best practice
-Compliance
-Regulation
-Control
-Principle
-Objective
-Mechanism
-Methodology
-Strategy
-Tactics
-Technique
-Framework
-Model
-Architecture
-Design
-Implementation
-Operation
-Maintenance
-Assessment
-Evaluation
-Audit
-Review
-Test
-Verification
-Validation
-Monitoring
-Measurement
-Metric
-Penetration testing
-Vulnerability assessment
-Pen test
-Red team
-Blue team
-Purple team
-White team
-Black team
-Gray team
-Cyber range
-Sandbox
-Virtualization
-Emulation
-Simulation
+hacking
+malware
+phishing
+ransomware
+virus
+firewall
+encryption
+cryptography
+zero-day
+exploit
+intrusion
+vulnerability
+privacy
+identity
+access
+authentication
+authorization
+access control
+auditing
+compliance
+regulation
+governance
+risk
+threat
+mitigation
+prevention
+detection
+incident response
+recovery
+continuity
+disaster
+forensics
+intelligence
+incident
+security operations center
+security information and event management
+log management
+data loss prevention
+endpoint security
+mobile security
+cloud security
+iot security
+scada security
+network security
+application security
+web security
+email security
+identity and access management
+identity governance
+single sign-on
+multi-factor authentication
+identity federation
+identity and access provisioning
+identity and access life cycle management
+password management
+security as a service
+security as a platform
+security as a product
+security orchestration
+blockchain
+cryptocurrency
+biometric authentication
+cybercrime
+cyber espionage
+cyber warfare
+cyber terrorism
+cyberbullying
+ddos
+dos
+botnet
+spam
+spyware
+adware
+rootkit
+backdoor
+trojan
+worm
+buffer overflow
+sql injection
+cross-site scripting
+cross-site request forgery
+man-in-the-middle
+eavesdropping
+sniffing
+spoofing
+tampering
+physical security
+personnel security
+supply chain security
+security awareness
+awareness
+policy
+standard
+procedure
+guideline
+baseline
+best practice
+compliance
+regulation
+control
+principle
+objective
+mechanism
+methodology
+strategy
+tactics
+technique
+framework
+model
+architecture
+design
+implementation
+operation
+maintenance
+assessment
+evaluation
+audit
+review
+test
+verification
+validation
+monitoring
+measurement
+metric
+penetration testing
+vulnerability assessment
+pen test
+red team
+blue team
+purple team
+white team
+black team
+gray team
+cyber range
+sandbox
+virtualization
+emulation
+simulation

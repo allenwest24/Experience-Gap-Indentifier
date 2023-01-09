@@ -8,15 +8,25 @@ import (
 	"os"
 	"strings"
 	"log"
+	"flag"
 )
 
 func main() {
+	// Define the flags
+	var verbose bool
+	flag.BoolVar(&verbose, "v", false, "Verbose mode")
+
+	// Parse the flags
+	flag.Parse()
+
 	// Read the resume from a file
 	resume, err := readResume("resume.txt")
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
+	resume = sanitizeString(resume)
+	fmt.Println(resume)
 
 	// Read the job postings from the provided files and URLs
 	jobPostings, err := readJobPostings(os.Args[1:])
@@ -24,17 +34,44 @@ func main() {
 		fmt.Println(err)
 		return
 	}
+	for i, s := range jobPostings {
+		jobPostings[i] = sanitizeString(s)
+	}
+	fmt.Println(jobPostings)
 
 	// Compare the set of words in the resume to the set of words in the job postings
 	// to identify words not found in the resume that are in a job posting
 	missingWords := identifyMissingWords(resume, jobPostings)
 
 	// Write the missing words to an output file
-	if err := writeMissingWords("output.txt", missingWords); err != nil {
+	if err := writeMissingWords("output.txt", missingWords, verbose); err != nil {
 		fmt.Println(err)
 		return
 	}
 }
+
+func sanitizeString(s string) string {
+	// Make the string lowercase
+	s = strings.ToLower(s)
+
+	// Remove all extra characters
+	s = strings.ReplaceAll(s, ")", "")
+	s = strings.ReplaceAll(s, "(", "")
+	s = strings.ReplaceAll(s, ",", "")
+	s = strings.ReplaceAll(s, ".", "")
+	s = strings.ReplaceAll(s, "'", "")
+	s = strings.ReplaceAll(s, "\"", "")
+	s = strings.ReplaceAll(s, "`", "")
+
+	// Remove all newlines
+	s = strings.ReplaceAll(s, "\n", " ")
+
+	// Separate based combinators
+	s = strings.ReplaceAll(s, "/", " ")
+
+	return s
+}
+
 
 func readResume(filename string) (string, error) {
 	file, err := os.Open(filename)
@@ -98,7 +135,6 @@ func identifyMissingWords(resume string, jobPostings []string) map[string]int {
 			}
 		}
 	}
-	fmt.Println(missingWords)
 	return missingWords
 }
 
@@ -113,7 +149,7 @@ func contains(slice []string, item string) bool {
 
 func readFile(filename string) []string {
 	// Open the file using the os.Open function
-	file, err := os.Open("filename.txt")
+	file, err := os.Open(filename)
 	if err != nil {
 	    log.Fatal(err)
 	}
@@ -125,7 +161,7 @@ func readFile(filename string) []string {
 	// Use the Scan function to read the file line by line
 	lines := []string{}
 	for scanner.Scan() {
-	    lines = append(lines, scanner.Text())
+	    lines = append(lines, sanitizeString(scanner.Text()))
 	}
 	
 	if err := scanner.Err(); err != nil {
@@ -134,7 +170,7 @@ func readFile(filename string) []string {
 	return lines
 }
 
-func writeMissingWords(filename string, missingWords map[string]int) error {
+func writeMissingWords(filename string, missingWords map[string]int, verbose bool) error {
 	knownCerts := readFile(strings.Join([]string{"Skill Categories", "certifications.txt"}, "/"))
 	knownCBW := readFile(strings.Join([]string{"Skill Categories", "cyber_buzz_words.txt"}, "/"))
 	knownPL := readFile(strings.Join([]string{"Skill Categories", "programming_languages.txt"}, "/"))
@@ -165,10 +201,9 @@ func writeMissingWords(filename string, missingWords map[string]int) error {
 			other = append(other, word)
 		}
 	}
-	fmt.Println(certList)
 
 	// Write all certifications to output.txt.
-	if _, err := file.WriteString("CERTIFICATIONS:\n"); err != nil {
+	if _, err := file.WriteString("\nCERTIFICATIONS:\n"); err != nil {
 		return err
 	}
 	for _, str := range certList {
@@ -178,7 +213,7 @@ func writeMissingWords(filename string, missingWords map[string]int) error {
 	}
 
 	// Write all cyber buzz words to output.txt.
-        if _, err := file.WriteString("CYBER BUZZ WORDS:\n"); err != nil {
+        if _, err := file.WriteString("\nCYBER BUZZ WORDS:\n"); err != nil {
                 return err
         }
         for _, str := range CBWList {
@@ -188,7 +223,7 @@ func writeMissingWords(filename string, missingWords map[string]int) error {
         }
 
 	// Write all programming languages to output.txt.
-        if _, err := file.WriteString("PROGRAMMING LANGUAGES:\n"); err != nil {
+        if _, err := file.WriteString("\nPROGRAMMING LANGUAGES:\n"); err != nil {
                 return err
         }
         for _, str := range PLList {
@@ -198,7 +233,7 @@ func writeMissingWords(filename string, missingWords map[string]int) error {
         }
 
 	// Write all acronyms to output.txt.
-        if _, err := file.WriteString("ACRONYMS:\n"); err != nil {
+        if _, err := file.WriteString("\nACRONYMS:\n"); err != nil {
                 return err
         }
         for _, str := range acronymList {
@@ -207,15 +242,17 @@ func writeMissingWords(filename string, missingWords map[string]int) error {
                 }
         }
 
-	// Write all else  to output.txt.
-        if _, err := file.WriteString("EVERYTHING ELSE:\n"); err != nil {
-                return err
-        }
-        for _, str := range other {
-                if _, err := file.WriteString(fmt.Sprintf("%s (%d mentions)\n", str, missingWords[str])); err != nil {
-                        return err
-                }
-        }
+	// Write all else  to output.txt if verbose is enabled
+	if verbose {
+        	if _, err := file.WriteString("\nEVERYTHING ELSE:\n"); err != nil {
+                	return err
+        	}
+        	for _, str := range other {
+                	if _, err := file.WriteString(fmt.Sprintf("%s (%d mentions)\n", str, missingWords[str])); err != nil {
+                        	return err
+                	}
+        	}
+	}
 
 	return nil
 }
