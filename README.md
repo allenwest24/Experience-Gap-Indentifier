@@ -1,11 +1,12 @@
 # Experience-Gap-Indentifier
-This tool takes a resume file and a list of job posting files or URLs as input, and identifies any experience gaps in the resume based on the requirements of the job postings. Ideal for people looking to pivot careers or choose a new skill to learn.
+This tool takes a resume file and a list of job posting files or URLs as input, and identifies any experience gaps in the resume based on the requirements of the job postings. Jobalytics is an example of a tool that takes a single resume and a single job posting, then points out buzz words that you can use to sprcue up your resume. This tool, however, is designed for people who are looking for new projects, new ideas, new things to learn, but just don't know what to prioritize. Gather a few of you dream roles, test them against your list of capabilities, and see what you could stands to get soome more experience with! Ideal for people looking to pivot careers or choose a new skill to learn.
 
 ### Usage
 To run this program, save your resume as 'resume.txt' or change the name of the stored constant in the program. Then, supply one or multiple job listings, either as files or as a url.
 ```
 go run main.go [-v] [job posting file/URL]...
 ```
+-v prints out in verbose. Not very suitable for urls, but may add some info for files.
 
 ### Output
 
