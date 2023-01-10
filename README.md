@@ -4,7 +4,7 @@ This tool takes a resume file and a list of job posting files or URLs as input, 
 ### Usage
 To run this program, save your resume as 'resume.txt' or change the name of the stored constant in the program. Then, supply one or multiple job listings, either as files or as a url.
 ```
-go run main.go [job posting file/URL]...
+go run main.go [-v] [job posting file/URL]...
 ```
 
 ### Output
@@ -36,8 +36,33 @@ go run main.go job_posting.txt
 ```
 Will produce the following output file:
 ```
-Java (1 job postings)
-Ruby (1 job postings)
+CERTIFICATIONS:
+cissp (1 mentions)
+
+CYBER BUZZ WORDS:
+strategy (4 mentions)
+model (2 mentions)
+compliance (2 mentions)
+risk (3 mentions)
+verification (4 mentions)
+governance (1 mentions)
+framework (1 mentions)
+privacy (2 mentions)
+awareness (3 mentions)
+identity (3 mentions)
+access (1 mentions)
+regulation (2 mentions)
+intrusion (1 mentions)
+policy (6 mentions)
+detection (2 mentions)
+design (6 mentions)
+
+PROGRAMMING LANGUAGES:
+ruby (2 mentions)
+
+ACRONYMS:
+api (6 mentions)
+it (7 mentions)
 ```
 ### Note
 
